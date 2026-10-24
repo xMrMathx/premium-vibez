@@ -767,7 +767,7 @@
 <script>
 (function(){
   var vids = document.querySelectorAll('video');
-  function tryPlay(v){ var pr = v.play(); if (pr && pr.catch) { pr.catch(function(){ v.setAttribute('controls',''); }); } }
+  function tryPlay(v){ v.muted = true; v.defaultMuted = true; var pr = v.play(); if (pr && pr.catch) { pr.catch(function(){ v.setAttribute('controls',''); }); } }
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { tryPlay(e.target); } else { e.target.pause(); } }); }, {threshold: 0.25});
     vids.forEach(function(v){ io.observe(v); v.addEventListener('click', function(){ if (v.paused) { tryPlay(v); } else { v.pause(); } }); });
