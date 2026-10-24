@@ -244,7 +244,15 @@
       .pkg{background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column}
       .pkg.featured{border-color:var(--line);background:var(--panel-2)}
       .pkg h3{font-family:"Playfair Display",Georgia,serif;font-size:1.4rem;font-weight:700;margin:0 0 6px;line-height:1.15}
+      .pkg .price{font-family:"Playfair Display",Georgia,serif;font-size:2rem;font-weight:700;color:var(--gold-soft);line-height:1.1;margin:2px 0 10px}
       .pkg .fit{color:var(--ink-3);font-size:.92rem;font-weight:600;margin:0 0 18px}
+      .care{
+        margin-top:20px;background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius);
+        padding:22px 24px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 20px;
+      }
+      .care h3{font-family:"Playfair Display",Georgia,serif;font-size:1.25rem;font-weight:700;margin:0;line-height:1.2}
+      .care .price{font-family:"Playfair Display",Georgia,serif;font-size:1.6rem;font-weight:700;color:var(--gold-soft);line-height:1.1}
+      .care p{color:var(--ink-2);font-size:.97rem;margin:0;flex:1 1 240px}
       .pkg ul{list-style:none;margin:0;padding:0}
       .pkg li{position:relative;padding:7px 0 7px 26px;color:var(--ink-2);font-size:.97rem;border-top:1px solid var(--line-soft)}
       .pkg li:first-child{border-top:none}
@@ -586,10 +594,11 @@
             <h2 id="packages-title">Three ways to start</h2>
             <p>Find the one that sounds like your project. Every one of them starts the same way — with the free mockup.</p>
           </div>
-          <p class="price-note"><b>How pricing works:</b> Every job starts with a free mockup. Your price is set with you after the mockup, before you pay anything.</p>
+          <p class="price-note"><b>How pricing works:</b> Every job starts with a free mockup. App Build final price is set with you after the mockup, before you pay anything.</p>
           <div class="pkg-grid">
             <article class="pkg">
               <h3>Starter Site</h3>
+              <p class="price">$399</p>
               <p class="fit">For getting your name online, clean and simple.</p>
               <ul>
                 <li>One-page website</li>
@@ -601,6 +610,7 @@
             </article>
             <article class="pkg featured">
               <h3>Business Site</h3>
+              <p class="price">$1,499</p>
               <p class="fit">For a business that needs the full presence.</p>
               <ul>
                 <li>Everything in Starter Site, plus:</li>
@@ -613,6 +623,7 @@
             </article>
             <article class="pkg">
               <h3>App Build</h3>
+              <p class="price">From $4,999</p>
               <p class="fit">For an idea that needs to be an app, not a page.</p>
               <ul>
                 <li>An app designed &amp; built from your idea</li>
@@ -623,6 +634,11 @@
                 <li>Free mockup before you pay</li>
               </ul>
             </article>
+          </div>
+          <div class="care">
+            <h3>Care Plan</h3>
+            <span class="price">$79/mo</span>
+            <p>Keep your site looked after once it&rsquo;s live.</p>
           </div>
           <div class="pkg-cta">
             <a class="btn btn-gold" href="#start">Start Your Project</a>
