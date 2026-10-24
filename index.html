@@ -253,6 +253,10 @@
       .care h3{font-family:"Playfair Display",Georgia,serif;font-size:1.25rem;font-weight:700;margin:0;line-height:1.2}
       .care .price{font-family:"Playfair Display",Georgia,serif;font-size:1.6rem;font-weight:700;color:var(--gold-soft);line-height:1.1}
       .care p{color:var(--ink-2);font-size:.97rem;margin:0;flex:1 1 240px}
+      .care ul{list-style:none;margin:16px 0 0;padding:0;flex:1 1 100%}
+      .care li{position:relative;padding:7px 0 7px 26px;color:var(--ink-2);font-size:.97rem;border-top:1px solid var(--line-soft)}
+      .care li::before{content:"\2713";position:absolute;left:2px;top:7px;color:var(--gold);font-weight:700}
+      .care .care-note{flex:1 1 100%;margin:12px 0 0;font-size:.85rem;color:var(--ink-3)}
       .pkg ul{list-style:none;margin:0;padding:0}
       .pkg li{position:relative;padding:7px 0 7px 26px;color:var(--ink-2);font-size:.97rem;border-top:1px solid var(--line-soft)}
       .pkg li:first-child{border-top:none}
@@ -639,6 +643,14 @@
             <h3>Care Plan</h3>
             <span class="price">$79/mo</span>
             <p>Keep your site looked after once it&rsquo;s live.</p>
+            <ul>
+              <li>Up to 2 hours of content updates every month</li>
+              <li>Security and functionality checks every month</li>
+              <li>Backups, and your site kept up to date</li>
+              <li>Priority support — straight to the builder, no ticket queue; replies within one business day</li>
+              <li>A short monthly health summary of your site</li>
+            </ul>
+            <p class="care-note">Update hours don&rsquo;t roll over month to month. Updates cover edits to your existing pages — new pages and new features are quoted separately as build work.</p>
           </div>
           <div class="pkg-cta">
             <a class="btn btn-gold" href="#start">Start Your Project</a>
